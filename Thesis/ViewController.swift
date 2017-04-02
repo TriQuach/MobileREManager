@@ -10,16 +10,19 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var btnMuaNha: UIButton!
+    @IBOutlet weak var btnBanNha: UIButton!
+    @IBOutlet weak var btnMoiGioi: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        btnMuaNha.ghostButton()
+        btnBanNha.ghostButton()
+        btnMoiGioi.ghostButton()
+        
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
+    
 
 }
 
