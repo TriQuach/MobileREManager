@@ -21,6 +21,24 @@ class ViewController: UIViewController {
         btnMoiGioi.ghostButton()
         
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "MuaNha")
+        {
+            
+            
+        }
+        else if (segue.identifier == "BanNha")
+        {
+
+            
+        }
+        else
+        {
+            (segue.destination as! BatDongSanController).temp = "moi gioi"
+            
+        }
+    }
+
 
     
 
