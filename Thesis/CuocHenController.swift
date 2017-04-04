@@ -12,6 +12,8 @@ import UIKit
 class CuocHenController: UIViewController {
     
     @IBOutlet weak var lblTest: UILabel!
+    
+    
     var temp:String?
     override func viewDidLoad() {
         super.viewDidLoad()

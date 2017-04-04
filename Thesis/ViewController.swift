@@ -24,17 +24,18 @@ class ViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "MuaNha")
         {
+            (segue.destination as! BatDongSanController).temp = "Bất động sản đang quan tâm"
             
+
             
         }
         else if (segue.identifier == "BanNha")
         {
-
-            
+            (segue.destination as! BatDongSanController).temp = "Bất động sản của tôi"
         }
         else
         {
-            (segue.destination as! BatDongSanController).temp = "moi gioi"
+            (segue.destination as! BatDongSanController).temp = "Bất động sản đang quản lý"
             
         }
     }
